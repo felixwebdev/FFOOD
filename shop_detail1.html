@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="assets/img/others/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+</head>
+<style>
+    #prev, #next {
+        display: none;
+    }
+</style>
+<body>
+    <!-- header======================================================================================== -->
+    <div id="header">
+      <input type="checkbox" id="tablet-menu-check" class="tablet-menu-btn">
+      <label for="tablet-menu-check" class="open-tablet-list">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+      </label>
+
+      <label for="tablet-menu-check" class="overlay"></label>
+      <img src="assets/img/others/logo.png" alt="" class="logo">
+      
+
+      <div id="tablet-menu">
+          <img src="assets/img/others/logo.png" alt="" class="tablet-logo">
+
+          <label for="tablet-menu-check" class="close-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                </svg>
+          </label>
+          <ul id="tablet-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="mobile-list">
+              <label for="account-mobile-check">
+              Acount
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5"/>
+                  <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </label>
+              <input type="checkbox" id="account-mobile-check" class="account-mobile-btn">
+              <ul class="account-mobile-list">
+                  <li><a href="index.html">Log Out</a></li>
+                </ul>
+          </li>
+          <li class="mobile-list cart-sub-icon"><a href="#">Cart</a></li>
+      </ul>
+      </div>
+
+      <div class="cartTab">
+          <header class="cartTab-header">
+              <span class="close-cartTab">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+              </span>
+              <h4>Đơn hàng của bạn: </h4>
+          </header>
+          <div class="cart-list">
+            
+          </div>
+      </div>
+
+      <div id="nav">
+        <ul id="nav">
+         <li><a href="index.html">Home</a></li>
+         <li class="nav-active"><a href="shop.html">Shop</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <ul class="group">
+          <li>
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+              </a>
+              <ul class="sub-sign">
+                  <li><a class="log-out" href="index.html">Log Out</a></li>
+              </ul>
+          </li>
+          <li >
+              <div class="cart-icon">
+                  <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                      <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+                      </svg>  
+                  </a>
+                  <span class="cart-number-icon">0</span>
+              </div>
+              
+          </li>
+      </ul>
+   </div>
+    <!-- start:slider======================================================================================== -->
+    <div class="container">
+        
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="root" class="sign-popup">
+      <div class="root-container js-root-container">
+       <div class="root-close js-root-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+       </div>
+       
+       <div class="sign-in">
+          <header class="root-heading">
+              <center><img src="assets/img/others/logo.png" alt="" class="logo-sign"></center>
+              <center><h5 class="content js-sign-content">Đăng nhập vào FFOOD</h5></center>
+          </header>
+
+          <div class="root-body">
+              <label for="email-in" class="root-label">
+               <b>
+               <span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+               </svg></span> Email / <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                   <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                 </svg></span> Phone
+              </label></b>
+              <form onsubmit="signin()">
+              <input id="email-in" type="text" class="form-control root-input" placeholder="Enter email or phone......" required>
+              <input id="password-in" type="password" class="form-control root-input" placeholder="Enter Password........" required>
+              <center><input type="submit" class="btn root-btn"></center>
+           </form>
+            </div>
+            
+          <footer class="root-footer">
+              <p><span class="text-sign">Bạn chưa có tài khoản?</span> <a href="#" class="sign-submit-btn">Đăng kí</a></p> 
+             <p class="passlost"><a href="">Quên mật khẩu ?</a></p>
+           </footer>
+       </div>
+
+       <div class="sign-up">
+          <header class="root-heading">
+              <center><img src="assets/img/others/logo.png" alt="" class="logo-sign"></center>
+              <center><h5 class="content js-sign-content">Chào mừng đến với FFOOD</h5></center>
+          </header>
+          <div class="root-body">
+              <label for="email-up" class="root-label">
+               <b>
+               <span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+               </svg></span> Email / <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                   <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                 </svg></span> Phone
+              </label></b>
+              <form onsubmit="signup()">
+              <input id="email-up" type="text" class="form-control root-input" placeholder="Enter email or phone......" required >
+
+              <input id="username" type="text" class="form-control root-input" placeholder="Enter username......" required>
+   
+              <input id="password-up" type="password" class="form-control root-input" placeholder="Enter Password........" required
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+              title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." >
+
+              <input id="re-password" type="password" class="form-control root-input" placeholder="Re-Enter Password........" name="password" required
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+              title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." >
+   
+              <center><input type="submit" class="btn root-btn"></center>
+           </form>
+            </div>
+
+            <footer class="root-footer">
+              <p><span class="text-sign">Bạn đã có tài khoản?</span> <a href="#" class="sign-submit-btn">Đăng nhập</a></p> 
+           </footer>
+       </div>
+
+      </div>
+   </div>
+
+    <script src="assets/js/main.js"></script>
+    <!-- shop-area=============================================================================================== -->
+    
+    <div class="shop-container-detail">
+      <div class="shop-info">
+        <p>Shop > <a href="shop.html">Đồ ăn vặt khô</a>> BimBim Que Đậu Hà Lan VIETTINMART 500G</p>
+       </div>
+        <div class="shopdetail-img">
+          <div class="main-img">
+            <img src="assets/img/shop-product-1.jpg" alt="">
+          </div>
+          <div class="outer-img">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/img/shop-product-1.jpg" alt="">
+              </div>
+              <div class="col-3">
+                <img src="assets/img/product-1-1.jpg" alt="">
+              </div>
+              <div class="col-3">
+                <img src="assets/img/product-1-2.jpg" alt="">
+              </div>
+              <div class="col-3">
+                <img src="assets/img/product-1-3.jpg" alt="">
+              </div>
+            </div>   
+          </div>
+        </div>
+       <div class="shopdetail-info">
+            <p>BimBim Que Đậu Hà Lan VIETTINMART 500G</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <br>
+            <b><u>đ</u>33.000 <span style="display: none;">33000</span></b>
+            <br>
+            <div class="quantity">
+               <label >số lượng</label> 
+               <input type="number" name="quantity-item" id="soluongabs" class="number_sp" value="1">
+            </div>
+            <button onclick="addtoCart()" value="Thêm vào giỏ hàng" class="adding">Thêm vào giỏ hàng</button>
+            <p style="color: grey; padding-top: 100px;">Mô tả</p>
+            <div class="info-product">
+              <div class="info-1">
+                <p>Thương hiệu</p>
+                <p>Trọng lượng</p>
+                <p>Hạn sử dụng</p>
+                <p>Xuất xứ</p>
+                <p>Loại thực phẩm</p>
+                <p>Giảm cân</p>
+                <p>Thành phần</p>
+                <p>Tên tổ chức </p>
+                <p>Kho hàng</p>
+              </div>
+              <div class="info-2">
+                <p> Viettin Mart</p>
+                <p>500g</p>
+                <p>
+                  6 tháng</p>
+                <p>
+                  Việt Nam</p>
+                <p>Đồ ăn vặt khô</p>
+                <p> Không caffeine, Không cholesterol</p>
+                <p>
+                    80% bột ngũ cốc, 10% ngô, 7% gạo, 2% kho</p>
+                <p>Công ty TNHH MTV SX TM DV môi trường Việt
+                  </p>
+                <p>
+                    86741</p>
+              </div>
+            </div>
+
+       </div>
+    
+    </div>
+     
+</body>
+</html>
+  
