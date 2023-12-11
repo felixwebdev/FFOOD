@@ -258,3 +258,10 @@ function showgiohangotherweb() {
     document.querySelector('.cart-list').innerHTML = ttgh;
 }
 
+
+// shop-detail-swapimages
+function changeimg(fileName){
+    let img=document.querySelector(".main-img img");
+    img.setAttribute("src",fileName);
+}
+
